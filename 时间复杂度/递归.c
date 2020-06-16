@@ -8,7 +8,8 @@ void fun(int a[],int n,int k)
   }
   else
   
-  {for(i=k;i<n;i++)
+  {
+    for(i=k;i<n;i++)
       a[i]=a[i]+i*i;
    fun(a,n,k+1);
   }
