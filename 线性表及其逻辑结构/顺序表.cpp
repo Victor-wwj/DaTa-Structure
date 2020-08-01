@@ -22,6 +22,7 @@ int mian(){
     bool GetElem(Sqlist*L,int i,ElemType &e);
     int LocateElem(Sqlist*L,ElemType e);
     bool ListInsert(Sqlist*&L,int i,ElemType e);
+    bool ListDelete(Sqlist*&L,int i,ElemType e)
 }
 
 //顺序表整体创建
@@ -91,3 +92,14 @@ int mian(){
         return true;
     }
 
+//在顺序表第i个位置删除元素
+    bool ListDelete(Sqlist*&L,int i,ElemType e){
+        int j;
+        if(i<1||i>L->lenth)return false;
+        i--;
+        e=L->data[i];
+        for(j=i;j<L->lenth-1;j++)
+            L->data[j]=L->data[j+1];
+        L->lenth--;
+        return true;
+    }
