@@ -11,8 +11,17 @@
 
  //main函数   
 int mian(){
-   
- //省略函数声明
+
+ //函数声明整体功能预览
+    void CreateList(Sqlist*&L,ElemType a[],int n);
+    void InitList(Sqlist*&L);
+    void DestroyList(Sqlist*&L);
+    bool ListEmpty(Sqlist*L);
+    int ListLenth(Sqlist*L);
+    void DisplayList(Sqlist*L);
+    bool GetElem(Sqlist*L,int i,ElemType &e);
+    int LocateElem(Sqlist*L,ElemType e);
+    bool ListInsert(Sqlist*&L,int i,ElemType e);
 }
 
 //顺序表整体创建
