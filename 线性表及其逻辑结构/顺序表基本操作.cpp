@@ -5,7 +5,7 @@
 //顺序表基本类型
     typedef struct 
     {
-        ElemType data[MaxSize];
+        ElemType data[100];
         int lenth;
     }Sqlist;
 
@@ -22,7 +22,7 @@ int mian(){
     bool GetElem(Sqlist*L,int i,ElemType &e);
     int LocateElem(Sqlist*L,ElemType e);
     bool ListInsert(Sqlist*&L,int i,ElemType e);
-    bool ListDelete(Sqlist*&L,int i,ElemType e)
+    bool ListDelete(Sqlist*&L,int i,ElemType e);
 }
 
 //顺序表整体创建
