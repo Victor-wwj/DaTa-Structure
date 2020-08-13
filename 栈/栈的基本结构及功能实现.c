@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define Stack_Size 50
-#define TRUE 1
+#define TRUE 0
 #define FALSE -1
 typedef char StackElemtype;
 typedef struct 
