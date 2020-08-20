@@ -1,7 +1,7 @@
 #include<iostream>
 typedef char ElemType;
 
-//顺序表基本类型
+//单链表基本类型
     typedef struct LNode
     {
         ElemType data;
