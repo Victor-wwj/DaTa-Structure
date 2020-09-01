@@ -52,7 +52,7 @@ bool Pop(LinkStNode*&L,Elemtype e){
 //取栈顶
 bool GetTop(LinkStNode*p,Elemtype &e){
     if(p->next==NULL)return false;
-    p->next->data=e;
+    e=p->next->data;
     return true;
 }
 
@@ -65,7 +65,7 @@ bool Match(char str[],int n){           //字符串str，字符串长度n
     while (i<n&&match)
     {
         if(str[i]=='(')
-            Push(p,e);
+            Push(p,str[i]);
         else if (str[i]==')')
         {
             bool result=GetTop(p,e);
