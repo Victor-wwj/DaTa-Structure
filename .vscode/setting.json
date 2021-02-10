@@ -1,0 +1,16 @@
+{
+    "code-runner.executorMap": {
+      "cpp": "g++ $fullFileName -o $dir\"$fileNameWithoutExt\"\".out\" -W -Wall -O2 -std=c++17 && $dir\"$fileNameWithoutExt\"\".out\"",
+      "c": "gcc $fullFileName -o $dir\"$fileNameWithoutExt\"\".out\" -W -Wall -O2 -std=c17 && $dir\"$fileNameWithoutExt\"\".out\""
+    },
+
+    "code-runner.clearPreviousOutput": true,
+
+    "code-runner.saveAllFilesBeforeRun": false,
+
+    "code-runner.saveFileBeforeRun": true,
+
+    "code-runner.showExecutionMessage": true, 
+    "code-runner.preserveFocus": false,
+    "code-runner.ignoreSelection": true
+}
